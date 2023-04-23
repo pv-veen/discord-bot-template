@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "discord-bot-template"
+version = "0.1.0"
+description = "A template to create advanced Discord bots"
+authors = ["pv-veen <pv-veen@outlook.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "discord_bot_template"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+"discord.py" = "^2.2.2"
+
+[tool.poetry.group.development.dependencies]
+black = "^23.3.0"
+yapf = "^0.33.0"
+ruff = "^0.0.262"
+python-dotenv = "^1.0.0"
+
+[tool.yapf]
+based_on_style = "pep8"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
